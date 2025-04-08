@@ -1,0 +1,41 @@
+.Main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    height: 100%;
+    overflow: hidden;
+
+    @media (max-width: 750px) {
+        &.left {
+            grid-template-columns: 1fr;
+            .CenterPane {
+                display: none;
+            }
+
+            .RightPane {
+                display: none;
+            }
+        }
+
+        &.center {
+            grid-template-columns: 1fr;
+            .LeftPane {
+                display: none;
+            }
+
+            .RightPane {
+                display: none;
+            }
+        }
+
+        &.right {
+            grid-template-columns: 1fr;
+            .LeftPane {
+                display: none;
+            }
+            .CenterPane {
+                display: none;
+            }
+        }
+    }
+}
+

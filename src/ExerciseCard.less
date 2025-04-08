@@ -1,0 +1,45 @@
+/* ExerciseCard.less */
+
+.ExerciseCard {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex-grow: 1; /* Tartalom kitöltése */
+        cursor: pointer;
+    }
+
+    .field {
+        display: flex;
+        gap: 8px;
+    }
+
+    label {
+        min-width: 85px;
+        width: 100px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    input {
+        flex-grow: 1;
+        padding: 3px;
+        border-radius: 8px;
+        text-align: center; /* Jobbra igazítjuk az adatokat az input mezőn belül */
+        min-width: 0; /* Megakadályozza, hogy az input túl sok helyet foglaljon */
+    }
+
+}

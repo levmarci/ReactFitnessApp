@@ -1,0 +1,35 @@
+.LeftPane {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    height: 100%;
+
+    .workouts {
+        flex-grow: 1;
+        overflow-y: auto;
+        /* Görgetés a függőleges irányban */
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .header {
+        padding: 5px;
+        font-weight: bold;
+        font-size: large;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .backButton {
+		margin-bottom: 8px;
+	}
+    
+    @media (min-width: 750px) {
+		.backButton {
+			display: none;
+		}
+	}
+}

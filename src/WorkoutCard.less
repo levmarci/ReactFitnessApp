@@ -1,0 +1,35 @@
+.WorkoutCard {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 8px ;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+
+    button {
+        background: none;
+        border: none;
+        color: #ff4d4f; /* Piros szín a kuka ikonhoz */
+        font-size: rem;
+        box-shadow: none; // Árnyék
+        margin-right: 12px;
+        &:hover {
+            transform: scale(1.5); /* Nagyítás hover esetén */
+        }
+    }
+
+    .content {
+        flex-grow: 1;
+
+        h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        time {
+            display: block;
+            margin-top: 4px;
+            font-size: 0.9em;
+        }
+    }
+}

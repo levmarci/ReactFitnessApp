@@ -1,0 +1,33 @@
+.Stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+
+    .time-display {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .backButton {
+		margin-bottom: 8px;
+	}
+
+	@media (min-width: 750px) {
+		.backButton {
+			display: none;
+		}
+	}
+
+}
+
+
